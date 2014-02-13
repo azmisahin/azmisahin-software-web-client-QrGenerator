@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="HtmlApp" ng-controller="HtmlCtrl">
+
+
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="cache-control" content="no-cache">
+    <meta name="pragma" content="no-cache">
+    <meta name="google" content="notranslate">
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <meta http-equiv='Page-Enter' content='blendTrans(Duration=0.2)'>
+    <meta http-equiv='Page-Exit' content='blendTrans(Duration=0.2)'>
+
+    <meta name='description' content='{{ Page.description() }}'>
+
+    <meta name='author' content='{{ Page.author() }}'>
+
+    <meta name='google' content='notranslate' />
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+
+    <!--[if lt IE 9]>
+    <script src="/ui/jquery/html5shiv.js"></script>
+    <script src="/ui/jquery/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Requrid-->
+    <link href="Ui/bootstrap/css/bootstrap.min.css" rel="stylesheet" />    
+    <link href="Content/Css/Site.css" rel="stylesheet" />
+
+    <!--Html Mvc-->
+    <script src="Ui/angularjs/angular.min.js"></script>  
+    <script src="Content/Js/Controller.js"></script>
+
+    <!--Site Default-->
+    <script src="Ui/jquery/yepnope.min.js"></script>
+    <script src="Ui/jquery/jquery-1.7.1.min.js"></script>
+    <script src="Ui/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Content/Js/Site.js"></script>
+
+
+
+
+    <title>{{ Page.title() }}</title>
+
+</head>
+
+<body>
+
+    <div ng-view class="container">
+        <div class="">
+
+            <h1>{{ Page.description() }}</h1>
+
+            <div class="row well-sm">
+
+                <div class="col-md-6">
+
+                    <div class="panel panel-default well-sm">
+
+                        <ul id="myTab" class="nav nav-tabs">
+
+                            <li class="active"><a href="#Link" data-toggle="tab">Link</a></li>
+                            <li class=""><a href="#Mail" data-toggle="tab">Mail</a></li>
+                            <li class=""><a href="#Tel" data-toggle="tab">Telefon</a></li>
+                            <li class=""><a href="#Sms" data-toggle="tab">Sms</a></li>
+                            <li class=""><a href="#Card" data-toggle="tab">Kartvizit</a></li>
+                        </ul><!--tab-->
+
+                        <div id="myTabContent" class="tab-content">
+
+                            <div class="tab-pane fade active in" id="Link">
+
+                                <form role="form">
+
+                                    <div class="form-group">
+                                        <label>Link</label>
+                                        <input type="text" class="form-control" id="Url" name="Url" value="http://azmisahin.com" placeholder="Link">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>En</label>
+                                        <input type="text" class="form-control" id="Width" name="Width" value="300" placeholder="En">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Boy</label>
+                                        <input type="text" class="form-control" id="Height" name="Height" value="300" placeholder="Boy">
+                                    </div><!--form group-->
+
+                                    <input type="button" class="btn btn-default" value="Hazırla" />
+
+                                </form><!--form-->
+
+                            </div><!--tab pane-->
+
+                            <div class="tab-pane fade" id="Mail">
+
+                                <form role="form">
+
+                                    <div class="form-group">
+                                        <label>Mail</label>
+                                        <input type="text" class="form-control" id="MailAdress" name="MailAdress" value="bilgi@azmisahin.com" placeholder="Mail Adres">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>En</label>
+                                        <input type="text" class="form-control" id="Width" name="Width" value="300" placeholder="En">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Boy</label>
+                                        <input type="text" class="form-control" id="Height" name="Height" value="300" placeholder="Boy">
+                                    </div><!--form group-->
+
+                                    <input type="button" class="btn btn-default" value="Hazırla" />
+
+                                </form><!--form-->
+
+                            </div><!--tab pane-->
+
+                            <div class="tab-pane fade" id="Tel">
+
+                                <form role="form">
+
+                                    <div class="form-group">
+                                        <label>Tel</label>
+                                        <input type="text" class="form-control" id="Tel" name="Tel" value="5548777858" placeholder="Mail Adres">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>En</label>
+                                        <input type="text" class="form-control" id="Width" name="Width" value="300" placeholder="En">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Boy</label>
+                                        <input type="text" class="form-control" id="Height" name="Height" value="300" placeholder="Boy">
+                                    </div><!--form group-->
+
+                                    <input type="button" class="btn btn-default" value="Hazırla" />
+
+                                </form><!--form-->
+
+                            </div><!--tab pane-->
+
+                            <div class="tab-pane fade" id="Sms">
+
+                                <form role="form">
+
+                                    <div class="form-group">
+                                        <label>Tel</label>
+                                        <input type="text" class="form-control" id="Tel" name="Tel" value="5548777858" placeholder="Mail Adres">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Mesaj (Max 140)</label>
+                                        <input type="text" class="form-control" id="Mesaj" name="Mesaj" value="Sitemizi Ziyaret Edin: http://azmisahin.com" maxlength="140" placeholder="Mail Adres">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>En</label>
+                                        <input type="text" class="form-control" id="Width" name="Width" value="300" placeholder="En">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Boy</label>
+                                        <input type="text" class="form-control" id="Height" name="Height" value="300" placeholder="Boy">
+                                    </div><!--form group-->
+
+                                    <input type="button" class="btn btn-default" value="Hazırla" />
+
+                                </form><!--form-->
+
+                            </div><!--tab pane-->
+
+                            <div class="tab-pane fade" id="Card">
+
+                                <form role="form">
+
+                                    <div class="form-group">
+                                        <label>Ad</label>
+                                        <input type="text" class="form-control" id="Ad" name="Ad" value="Azmi" placeholder="Ad">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Şirket</label>
+                                        <input type="text" class="form-control" id="Sirket" name="Sirket" value="azmisahin.com" placeholder="Şirket">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Başlık</label>
+                                        <input type="text" class="form-control" id="Baslik" name="Baslik" value="Azmi ŞAHİN" placeholder="Başlık">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Telefon</label>
+                                        <input type="text" class="form-control" id="Tel" name="Tel" value="5548777858" placeholder="Telefon">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Mail</label>
+                                        <input type="text" class="form-control" id="MailAdress" name="MailAdress" value="bilgi@azmisahin.com" placeholder="Mail Adres">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Adres</label>
+                                        <input type="text" class="form-control" id="Adres" name="Adres" value="Antalya" placeholder="Adres">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Adres2</label>
+                                        <input type="text" class="form-control" id="Adres2" name="Adres2" value="Turkey" placeholder="Adres 2">
+                                    </div><!--form group-->
+
+
+                                    <div class="form-group">
+                                        <label>Web</label>
+                                        <input type="text" class="form-control" id="Url" name="Url" value="http://azmisahin.com" placeholder="Web">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Açıklama</label>
+                                        <input type="text" class="form-control" id="Not" name="Not" value="Senior Software Developer" placeholder="Not">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Encoding</label>
+                                        <input disabled type="text" class="form-control" id="Encoding" name="Encoding" value="VCARD" placeholder="Cart Tipi">
+                                    </div><!--form group-->
+
+                                    
+
+                                    
+
+                                    <div class="form-group">
+                                        <label>En</label>
+                                        <input type="text" class="form-control" id="Width" name="Width" value="300" placeholder="En">
+                                    </div><!--form group-->
+
+                                    <div class="form-group">
+                                        <label>Boy</label>
+                                        <input type="text" class="form-control" id="Height" name="Height" value="300" placeholder="Boy">
+                                    </div><!--form group-->
+
+                                    <input type="button" class="btn btn-default" value="Hazırla" />
+
+                                </form><!--form-->
+
+                            </div><!--tab pane-->
+
+                        
+
+                        </div><!--tab content-->
+
+                    </div><!--panel-->
+
+                </div><!--col 6-->
+
+                <div class="col-md-6">
+
+                    <div class="panel panel-default well-sm">
+                        <img id="qr" src="favicon.png" />
+                        <a href="#" id="download" class="btn btn-danger">İndir</a>                        
+                    </div><!--panel-->
+
+                </div><!--col 6-->
+
+            </div><!--row-->
+            
+
+
+            </div><!--well-->
+    </div><!--container-->    
+
+
+    
+    <!--Plugin-->
+    <script src="Content/Js/Qr.js"></script>
+    
+
+</body>
+</html>
